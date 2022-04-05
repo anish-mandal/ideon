@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Ubuntu:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[#ECE7FF] dark:bg-[#100D1B]
+}
