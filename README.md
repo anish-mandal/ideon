@@ -8,7 +8,7 @@
 ## Features
 - Dark Mode
 - Cross Platform (coming soon)
-- Saves your ideas which you may forgot
+- Saves your ideas that you may forget
 
 ## Build with
 - [React](https://reactjs.org/): Entire Frontend
@@ -41,8 +41,8 @@ npm run start
 ```
 
 ### Why I made this ?
-This is my first side project. I was stuck forgetting my plans and ideas and I used to have my ideas and plans saved in todo list 😅
-but this project will really help me in saving my ideas and plans. It may also help you.
+This is my first side project. I was stuck forgetting my plans and ideas and I used to have my ideas and plans saved on a to-do list 😅
+but this project will help me in saving my ideas and plans. It may also help you.
 
 ## Author
 - [@anish-mandal](https://github.com/anish-mandal) (myself)
