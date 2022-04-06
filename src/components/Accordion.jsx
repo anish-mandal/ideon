@@ -50,7 +50,7 @@ function Accordion(props) {
 
   return (
     <div className="text-sans dark:text-[#AF98FD]">
-      <ul className="flex justify-between w-[50%] ml-auto mr-auto mt-[5px] mb-[5px] items-center h-[10vh] dark:bg-[#090711] rounded p-6 bg-[#D4CAFD]">
+      <ul className="flex justify-between w-[80vw] sm:w-[50vw] ml-auto mr-auto mt-[5px] mb-[5px] items-center h-[10vh] dark:bg-[#090711] rounded p-6 bg-[#D4CAFD]">
         <li>
           <h1 className="text-[1.5rem] font-bold">{props.title}</h1>
         </li>
@@ -69,7 +69,7 @@ function Accordion(props) {
         </li>
       </ul>
       {isActive && (
-        <div className="w-[50%] ml-auto mr-auto text-center p-3 dark:bg-[#090711] rounded">
+        <div className="w-[80vw] sm:w-[50vw] ml-auto mr-auto text-center p-3 dark:bg-[#090711] rounded">
           <p>{props.content}</p>
         </div>
       )}

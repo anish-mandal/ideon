@@ -43,21 +43,23 @@ class App extends React.Component {
 
   onSubmitHandle(e) {
     e.preventDefault();
-    const data = {
-      title: e.target.title.value,
-      content: e.target.content.value,
-    };
-    const nextData = [...this.state.IdeaList, data];
-    this.setState({ IdeaList: nextData });
-    localStorage.setItem("IdeaList", JSON.stringify(nextData));
-    localStorage.setItem("visited", "true")
+    if (e.target.title.value && e.target.content.value) {
+      const data = {
+        title: e.target.title.value,
+        content: e.target.content.value,
+      };
+      const nextData = [...this.state.IdeaList, data];
+      this.setState({ IdeaList: nextData });
+      localStorage.setItem("IdeaList", JSON.stringify(nextData));
+      localStorage.setItem("visited", "true");
+    }
   }
 
   deleteHandle(id) {
     const filteredData = this.state.IdeaList.filter((arrElem, index) => {
-      return index !== id
-    })
-    this.setState({ IdeaList: filteredData })
+      return index !== id;
+    });
+    this.setState({ IdeaList: filteredData });
     localStorage.setItem("IdeaList", JSON.stringify(filteredData));
   }
 
@@ -65,7 +67,7 @@ class App extends React.Component {
     if (localStorage.getItem("visited") === "true") {
       return (
         <div className="flex w-[100%] h-full transition-all delay-100">
-          <div className="flex text-center justify-start flex-col ml-auto mr-auto w-[80%] h-fit">
+          <div className="flex text-center justify-start flex-col ml-auto mr-auto w-[100vw] sm:w-[80vw] h-fit">
             <Navbar>
               <li className="font-script text-[1.5rem] dark:text-[#AF98FD] select-none">
                 Ideon
@@ -82,7 +84,7 @@ class App extends React.Component {
 
             <Form onSubmitHandle={this.onSubmitHandle}></Form>
 
-            <h1 className="text-[2rem] text-left w-[50%] ml-auto mr-auto mt-5 dark:text-[#AF98FD] font-light">
+            <h1 className="text-[2rem] text-left w-[80vw] sm:w-[50vw] ml-auto mr-auto mt-5 dark:text-[#AF98FD] font-light">
               Your Ideas:
             </h1>
 
@@ -102,7 +104,7 @@ class App extends React.Component {
     } else {
       return (
         <div className="flex w-[100%] h-full transition-all delay-100">
-          <div className="flex text-center justify-start flex-col ml-auto mr-auto w-[80%] h-fit">
+          <div className="flex text-center justify-start flex-col ml-auto mr-auto w-[80vw] h-fit">
             <Navbar>
               <li></li>
               <li
