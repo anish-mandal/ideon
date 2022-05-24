@@ -13,15 +13,14 @@
 ## Build with
 - [React](https://reactjs.org/): Entire Frontend
 - [Tailwindcss](https://tailwindcss.com/): For styling and adding dark mode
-- [Surge](https://surge.sh/): For hosting
 
 ## Run locally
 Clone this project
 ```bash
-In Windows :
+HTTPS:
 git clone https://github.com/anish-mandal/ideon.git
 
-In Linux :
+SSH:
 git clone git@github.com:anish-mandal/ideon.git
 ```
 
@@ -39,10 +38,6 @@ Start the server
 ```bash
 npm run start
 ```
-
-### Why I made this ?
-This is my first side project. I was stuck forgetting my plans and ideas and I used to have my ideas and plans saved on a to-do list 😅
-but this project will help me in saving my ideas and plans. It may also help you.
 
 ## Author
 - [@anish-mandal](https://github.com/anish-mandal) (myself)
